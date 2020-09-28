@@ -1,0 +1,41 @@
+[
+	{
+		"timestamp": 1601272040254,
+		"files": [
+			{
+				"filename": "ssr-build/ssr-bundle.js",
+				"previous": 2258,
+				"size": 0,
+				"diff": -2258
+			},
+			{
+				"filename": "bundle.*****.esm.js",
+				"previous": 0,
+				"size": 6409,
+				"diff": 6409
+			},
+			{
+				"filename": "polyfills.*****.esm.js",
+				"previous": 0,
+				"size": 2015,
+				"diff": 2015
+			},
+			{ "filename": "sw.js", "previous": 0, "size": 7108, "diff": 7108 },
+			{ "filename": "sw-esm.js", "previous": 0, "size": 7111, "diff": 7111 },
+			{
+				"filename": "bundle.178e1.js",
+				"previous": 0,
+				"size": 6406,
+				"diff": 6406
+			},
+			{
+				"filename": "polyfills.b1083.js",
+				"previous": 0,
+				"size": 2014,
+				"diff": 2014
+			},
+			{ "filename": "index.html", "previous": 0, "size": 628, "diff": 628 },
+			{ "filename": "sw-debug.js", "previous": 0, "size": 397, "diff": 397 }
+		]
+	}
+]
