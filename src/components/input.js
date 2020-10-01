@@ -1,12 +1,37 @@
 import styled from 'styled-components'
 import { border, borderRadius, fontSize } from 'styled-system'
-import Box from './box'
+import PseudoBox from './pseudobox'
+import Flex from './flex'
 
-const InputComponent = styled(Box)`
-    ${borderRadius}
-    ${border}
+const Container = styled(Flex)`
+	${borderRadius}
+	${border}
     ${fontSize}
     height: 54px;
 `
 
-export default (props) => <InputComponent px={2} as="input" bg="gray.2" border="none" borderRadius={2} {...props} />
+const Input = styled(PseudoBox).attrs({
+	bg: 'transparent',
+	as: 'input',
+	border: 'none',
+	_focus: {
+		outline: 'none',
+	},
+})``
+
+export default (props) => {
+	const { preContent } = props
+
+	return (
+		<Container px={2} bg="gray.2" border="none" borderRadius={2} {...props}>
+			<>
+				{preContent && (
+					<Flex mr={2} alignItems="center">
+						{preContent}
+					</Flex>
+				)}
+				<Input {...props} />
+			</>
+		</Container>
+	)
+}
