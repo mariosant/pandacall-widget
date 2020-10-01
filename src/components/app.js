@@ -24,7 +24,7 @@ const App = () => (
 						talk about it.
 					</Flex>
 					<Flex justifyContent="center" mb={6}>
-						<Input preContent="+44" width={1} />
+						<Input preContent="+44" placeholder="7412 1234567" width={1} />
 					</Flex>
 					<Flex justifyContent="center">
 						<Button type="button">Call me</Button>

@@ -17,6 +17,9 @@ const Input = styled(PseudoBox).attrs({
 	_focus: {
 		outline: 'none',
 	},
+	__placeholder: {
+		color: 'gray.5',
+	},
 })``
 
 export default (props) => {
