@@ -1,19 +1,8 @@
 import { createStoreon } from 'storeon'
+import { storeonLogger } from 'storeon/devtools'
+import layout from './layout.js'
+import router from './router.js'
 
-const layout = (store) => {
-	store.on('@init', () => ({
-		maximized: false,
-	}))
-
-	store.on('minimize', () => ({
-		maximized: false,
-	}))
-
-	store.on('maximize', () => ({
-		maximized: true,
-	}))
-}
-
-const store = createStoreon([layout])
+const store = createStoreon([storeonLogger, router, layout])
 
 export default store

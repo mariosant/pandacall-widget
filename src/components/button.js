@@ -12,6 +12,7 @@ cursor: pointer;
 
 export default (props) => (
 	<Button
+		as="button"
 		border="none"
 		py={3}
 		px={5}
@@ -20,6 +21,7 @@ export default (props) => (
 		color="white"
 		borderRadius={2}
 		fontWeight="bold"
+		{...props}
 	>
 		{props.children}
 	</Button>

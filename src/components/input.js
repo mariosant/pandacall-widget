@@ -23,7 +23,7 @@ const Input = styled(PseudoBox).attrs({
 })``
 
 export default (props) => {
-	const { preContent } = props
+	const { preContent, postContent } = props
 
 	return (
 		<Container px={2} bg="gray.2" border="none" borderRadius={2} {...props}>
@@ -34,6 +34,11 @@ export default (props) => {
 					</Flex>
 				)}
 				<Input {...props} />
+				{postContent && (
+					<Flex ml={2} alignItems="center">
+						{postContent}
+					</Flex>
+				)}
 			</>
 		</Container>
 	)

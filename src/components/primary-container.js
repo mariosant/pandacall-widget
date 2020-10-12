@@ -12,7 +12,6 @@ const PrimaryContainer = styled(Flex).attrs({
 	${borderRadius}
 	${position}
     
-    
     bottom: 90px;
 	left: 2rem;
 	max-height: calc(90vh - 70px);
